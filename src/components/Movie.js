@@ -1,13 +1,11 @@
 import React from 'react';
 
-const Movie = () => {
+const Movie = ({movie}) => {
     return (
-        <>
-            <li></li>
-            <span>
-                <button></button>
-            </span>
-        </>
+        <li>
+            <span>{movie.Title} ({movie.Year})</span>
+            <button>Nominate</button>
+        </li>
     )
 }
 

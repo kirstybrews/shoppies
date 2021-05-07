@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <h1>The Shoppies</h1>
-      <Search movies={movies} setMovies={setMovies} search={search} setSearch={setSearch}/>
-      <Results search={search}/>
+      <Search setMovies={setMovies} search={search} setSearch={setSearch}/>
+      <Results search={search} movies={movies}/>
       <Nominations/>
     </>
   );
