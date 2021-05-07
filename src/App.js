@@ -12,7 +12,7 @@ function App() {
       <h1>The Shoppies</h1>
       <Search setMovies={setMovies} search={search} setSearch={setSearch}/>
       <Results search={search} movies={movies} nominations={nominations} setNominations={setNominations}/>
-      <Nominations nominations={nominations}/>
+      <Nominations nominations={nominations} setNominations={setNominations}/>
     </>
   );
 }
