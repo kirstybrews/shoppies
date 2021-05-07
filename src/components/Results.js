@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Results = () => {
+const Results = ({search}) => {
     return (
-        <h3>Results for </h3>
+        <div>
+            <h3>Results for "{search}"</h3>
+            <ul>
+
+            </ul>
+        </div>
     )
 }
 

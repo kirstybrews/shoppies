@@ -2,7 +2,12 @@ import React from 'react';
 
 const Nominations = () => {
     return (
-        <h3>Nominations</h3>
+        <div>
+            <h3>Nominations</h3>
+            <ul>
+                
+            </ul>
+        </div>
     )
 }
 
