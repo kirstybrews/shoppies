@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Movie = ({movie}) => {
+const Movie = ({movie, nominations}) => {
     return (
         <li>
             <span>{movie.Title} ({movie.Year})</span>
-            <button>Nominate</button>
+            <button disabled={nominations.includes(movie)}>Nominate</button>
         </li>
     )
 }

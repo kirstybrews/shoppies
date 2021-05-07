@@ -6,12 +6,13 @@ import Nominations from './components/Nominations';
 function App() {
   const [movies, setMovies] = useState([])
   const [search, setSearch] = useState('')
+  const [nominations, setNominations] = useState([])
   return (
     <>
       <h1>The Shoppies</h1>
       <Search setMovies={setMovies} search={search} setSearch={setSearch}/>
-      <Results search={search} movies={movies}/>
-      <Nominations/>
+      <Results search={search} movies={movies} nominations={nominations}/>
+      <Nominations nominations={nominations}/>
     </>
   );
 }
