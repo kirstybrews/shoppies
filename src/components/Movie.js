@@ -7,6 +7,7 @@ const Movie = ({movie, nominations, setNominations}) => {
             setNominations([...nominations, movie])
         }
     }
+
     return (
         <li>
             <span>{movie.Title} ({movie.Year})</span>
