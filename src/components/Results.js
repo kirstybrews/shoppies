@@ -4,7 +4,7 @@ import Movie from './Movie';
 const Results = ({search, movies, nominations, setNominations, counter, numberOfPages, setCounter}) => {
 
     return (
-        <section id="results" class="w3-light-grey flex-item w3-mobile">
+        <section id="results" className="w3-light-grey flex-item w3-mobile">
             <h3>Results for "{search}"</h3>
             <ul>
                 {movies.map(movie => <Movie key={movie.imdbID} movie={movie} nominations={nominations} setNominations={setNominations}/>)}
