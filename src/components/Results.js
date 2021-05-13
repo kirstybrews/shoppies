@@ -9,7 +9,7 @@ const Results = ({search, movies, nominations, setNominations, counter, numberOf
             <ul>
                 {movies.map(movie => <Movie key={movie.imdbID} movie={movie} nominations={nominations} setNominations={setNominations}/>)}
             </ul>
-            {counter > 1 ? <button onClick={() => setCounter(counter -= 1)}>Previous</button> : null}
+            {counter > 1 ? <button id="previous" onClick={() => setCounter(counter -= 1)}>Previous</button> : null}
             {counter < numberOfPages ? <button onClick={() => setCounter(counter += 1)}>Next</button> : null}
             
         </section>

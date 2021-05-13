@@ -23,3 +23,15 @@ input {
 #results {
     margin-right: 16px;
 }
+
+.flex-item ul button {
+    margin-left: 10px;
+}
+
+.flex-item ul li {
+    margin-bottom: 10px;
+}
+
+#previous {
+    margin-right: 10px;
+}
