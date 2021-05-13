@@ -30,7 +30,7 @@ function App() {
         <h1>The Shoppies</h1>
       </header>
       <Search search={search} setSearch={setSearch}/>
-      <main class="w3-container w3-cell-row w3-section">
+      <main class="flex-container">
         <Results numberOfPages={numberOfPages} counter={counter} setCounter={setCounter} search={search} movies={movies} nominations={nominations} setNominations={setNominations}/>
         <Nominations nominations={nominations} setNominations={setNominations}/>
       </main>

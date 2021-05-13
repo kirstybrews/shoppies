@@ -6,6 +6,20 @@ input {
     width: 100%;
 }
 
-h3 {
-    text-align: left;
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex-grow: 1;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 49%;
+}
+
+#results {
+    margin-right: 16px;
 }
