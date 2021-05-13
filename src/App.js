@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Search from './components/Search';
 import Results from './components/Results';
 import Nominations from './components/Nominations';
+import './App.css';
 const MOVIES = `http://www.omdbapi.com/?type=movie&apikey=${process.env.REACT_APP_MOVIE_API}&s=`
 
 function App() {
@@ -25,12 +26,14 @@ function App() {
 
   return (
     <>
-      <header>
+      <header class="w3-container w3-section">
         <h1>The Shoppies</h1>
       </header>
       <Search search={search} setSearch={setSearch}/>
-      <Results numberOfPages={numberOfPages} counter={counter} setCounter={setCounter} search={search} movies={movies} nominations={nominations} setNominations={setNominations}/>
-      <Nominations nominations={nominations} setNominations={setNominations}/>
+      <main class="w3-container w3-cell-row w3-section">
+        <Results numberOfPages={numberOfPages} counter={counter} setCounter={setCounter} search={search} movies={movies} nominations={nominations} setNominations={setNominations}/>
+        <Nominations nominations={nominations} setNominations={setNominations}/>
+      </main>
     </>
   );
 }
