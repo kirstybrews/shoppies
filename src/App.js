@@ -5,6 +5,7 @@ import Nominations from './components/Nominations';
 import './App.css';
 import Confetti from 'react-confetti';
 const MOVIES = `http://www.omdbapi.com/?type=movie&apikey=${process.env.REACT_APP_MOVIE_API}&s=`
+console.log(process.env.REACT_APP_MOVIE_API)
 
 function App() {
   const [movies, setMovies] = useState([]);
