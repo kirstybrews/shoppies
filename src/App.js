@@ -14,7 +14,6 @@ function App() {
   const [numberOfPages, setNumberOfPages] = useState(null);
   const [height, setHeight] = useState(null);
   const [width, setWidth] = useState(null);
-  // const [show, setShow] = useState(false)
   const confettiRef = useRef(null);
 
   useEffect(() => {
