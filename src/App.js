@@ -20,7 +20,6 @@ function App() {
     fetch(MOVIES + search + "&page=" + counter)
         .then(r => r.json())
         .then(data => {
-            console.log(data)
             if (data.Search) {
                 setMovies(data.Search)
                 setNumberOfPages(Math.ceil(data.totalResults / 10))
