@@ -12,6 +12,7 @@ function App() {
   const [nominations, setNominations] = useState([]);
   const [counter, setCounter] = useState(1);
   const [numberOfPages, setNumberOfPages] = useState(null);
+  const [totalResults, setTotalResults] = useState(null)
   const [height, setHeight] = useState(null);
   const [width, setWidth] = useState(null);
   const confettiRef = useRef(null);
@@ -23,6 +24,7 @@ function App() {
             if (data.Search) {
                 setMovies(data.Search)
                 setNumberOfPages(Math.ceil(data.totalResults / 10))
+                setTotalResults(data.totalResults)
             }
         })
   }, [search, counter])
@@ -48,7 +50,7 @@ function App() {
       </header>
       <Search search={search} setSearch={setSearch}/>
       <main className="flex-container">
-        <Results numberOfPages={numberOfPages} counter={counter} setCounter={setCounter} search={search} movies={movies} nominations={nominations} setNominations={setNominations}/>
+        <Results totalResults={totalResults} numberOfPages={numberOfPages} counter={counter} setCounter={setCounter} search={search} movies={movies} nominations={nominations} setNominations={setNominations}/>
         <Nominations nominations={nominations} setNominations={setNominations}/>
       </main>
     </div>
